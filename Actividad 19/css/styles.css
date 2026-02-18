@@ -1,0 +1,36 @@
+/* Estilo general */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #fafafa;
+    padding: 20px;
+}
+
+/* Estilo de la lista */
+.lista-emoji {
+    list-style: none; /* Quitamos los puntos por defecto */
+    padding: 0;
+}
+
+.lista-emoji li {
+    font-size: 1.2rem;
+    margin: 8px 0;
+    color: #333;
+    position: relative;
+    padding-left: 30px; /* Espacio para el emoji */
+}
+
+/* Agregar emoji con ::before */
+.lista-emoji li::before {
+    content: "😻"; /* También puedes usar: "\1F63B" */
+    position: absolute;
+    left: 0;
+    top: 0;
+    font-size: 1.2rem;
+    margin-right: 10px;
+}
+
+.contenedor {
+    border: 2px solid #ccc;
+    padding: 20px;
+    width: 300px;
+}

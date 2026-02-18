@@ -1,0 +1,31 @@
+.cta-container {
+    background-image: url('https://picsum.photos/900/700'); /* Cambia por la ruta de tu imagen */
+    background-size: cover; /* La imagen cubre todo el contenedor */
+    background-position: center; /* Centra la imagen */
+    background-repeat: no-repeat; /* Evita que se repita */
+    
+    text-align: center; /* Centra el contenido */
+    padding: 60px; /* Espacio alrededor del contenido */
+    color: white; /* Para que el texto se vea sobre la imagen */
+}
+
+.cta-text {
+    font-size: 28px;
+    font-weight: bold;
+}
+
+.cta-container p.cta-text {
+    font-size: 18px;
+    font-weight: normal;
+}
+
+.cta-button {
+    background-color: #626bb2;
+    color: white;
+    padding: 15px 30px;
+    border: none;
+    border-radius: 8px;
+    font-size: 20px;
+    text-transform: uppercase;
+    cursor: pointer;
+}

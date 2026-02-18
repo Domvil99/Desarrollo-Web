@@ -1,0 +1,45 @@
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+}
+
+/* Barra de navegación */
+nav {
+    background-color: #333;
+    color: white;
+    padding: 15px;
+    text-align: center;
+    flex-shrink: 0;
+}
+
+/* Contenedor principal */
+.contenedor {
+    display: flex;
+    flex: 1;
+}
+
+/* Sección principal */
+.principal {
+    flex: 3;
+    padding: 20px;
+    background-color: #f4f4f4;
+}
+
+/* Barra lateral */
+.sidebar {
+    flex: 1;
+    padding: 20px;
+    background-color: #ddd;
+}
+
+/* Pie de página */
+footer {
+    background-color: #333;
+    color: white;
+    padding: 10px;
+    text-align: center;
+    flex-shrink: 0;
+}

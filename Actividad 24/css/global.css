@@ -1,0 +1,18 @@
+/* --------------------------------------------------
+   RESET
+-------------------------------------------------- */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+.top-bar {
+    background: #212934;
+    padding: 10px 80px;
+    display: flex;
+    justify-content: space-between;
+    font-size: 12px;
+    color: #6c757d;
+}

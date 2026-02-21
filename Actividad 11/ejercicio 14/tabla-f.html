@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>tabla-f</title>
+</head>
+<body>
+    <main>
+        <form>
+            <fieldset>
+                <legend>Completar</legend>
+                <br>
+                <label for="id_color">Elija un color</label>
+                <input type="color">
+                <br>
+                <textarea name="texto_escrito" placeholder="Por favor, escriba aquí" rows="5" cols="50"></textarea>
+                <br>
+                <select name="curso">
+                    <option value="java">Java</option>
+                </select>
+                <br>
+                <input type="checkbox" name="ciclo" id="id_asir" value="asir">
+                <label for="id_asir">ASIR</label>
+                <input type="checkbox" name="ciclo" id="id_dam" value="dam">
+                <label for="id_dam">DAM</label>
+                <input type="checkbox" name="ciclo" id="id_daw" value="daw">
+                <label for="id_daw">DAW</label>
+            </fieldset>
+            <fieldset>
+                <legend>Rellene las opciones siguientes</legend>
+                <label for="id_fecha2">Elija una fecha</label>
+                <input type="date" id="id_fecha2">
+                <br>
+                <label for="id_fichero2">Elija un fichero:</label>
+                <input type="file" name="fichero2" id="id_fichero2">
+                <br>
+                <select multiple name="opciones">
+                    <option value="smir">SMIR</option>
+                    <option value="asir">ASIR</option>
+                    <option value="dam">DAM</option>
+                    <option value="daw">DAW</option>
+                </select>
+            </fieldset>
+        </form>
+    </main>
+</body>
+</html>

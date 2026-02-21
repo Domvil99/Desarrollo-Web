@@ -3,12 +3,9 @@
     <head>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>Document</title>
+        <title>tabla-c</title>
     </head>
     <body>
-        <header>
-
-        </header>
         <main>
             </form>
                 <fieldset>
@@ -21,25 +18,36 @@
                     <br>
                     <input type="radio" name="ciclo">
                     <label for="id_daw">Francés</label>
-                    <br>
-                    
-                    
+                    <br><br>
                     <select id="id_usb" name="usb">
                         <option value="usb">USB</option>
                     </select>
-                    <br>
-
-                
+                    <br><br>
                     <label for="id_nombre">Nombre:</label>
                     <input type="text" id="id_nombre" name="nombre">
                     <br>
                     <label for="id_apellidos">Apellidos:</label>
                     <input type="text" id="id_apellidos" name="apellidos">
-                </fieldset>         
+                </fieldset>
+                
+                <fieldset>
+                    <legend>Indique sus preferencias por favor</legend>
+
+                    <select multiple name="genero">
+                        <option value="Hombre">Hombre</option>
+                        <option value="Mujer">Mujer</option>
+                    </select>
+                    <br><br>
+                    <input type="checkbox" id="id_mujer" name="mujer">
+                    <label for="id_mujer">Mujer</label>
+                    <br>
+                    <input type="checkbox" name="hombre" id="id_hombre">
+                    <label for="id_hombre">Hombre</label>
+                    <br><br>
+                    <label for="id_fecha">Elija una fecha:</label>
+                    <input type="date" name="fecha" id="id_fecha">
+                </fieldset>
             </form>
         </main>
-        <footer>
-
-        </footer>
     </body>
 </html>

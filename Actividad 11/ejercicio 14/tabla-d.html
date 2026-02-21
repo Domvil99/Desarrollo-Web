@@ -3,17 +3,70 @@
     <head>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>Document</title>
+        <title>tabla-d</title>
     </head>
     <body>
-       <header>
-
-       </header>
-       <main>
-        
-       </main>
-       <footer>
-
-       </footer>
+        <form>
+            <fieldset>
+                <legend>Indique sus preferencias por favor</legend>
+                <br>
+                <label for="id_fechaElegida1">Elija una fecha:</label>
+                <input type="date" name="fecha1" id="id_fechaElegida1">
+                <br>
+                <label for="id_fichero1">Elija un fichero:</label>
+                <input type="file" name="fichero1" id="id_fichero1">
+                <br>
+                <input type="radio" name="AMD" id="id_amd">
+                <label for="id_amd">AMD</label>
+                <input type="radio" name="Intel_i5" id="id_intel_i5">
+                <label for="id_intel_i5">Intel i5</label>
+                <input type="radio" name="Intel_i7" id="id_intel_i7">
+                <label for="id_intel_i7">Intel i7</label>
+            </fieldset>
+            <fieldset>
+                <legend>Indique sus preferencias por favor</legend>
+                <br>
+                <input type="radio" name="Materia" id="id_matematicas" value="Matematicas">
+                <label for="id_matematicas">Matemáticas</label>
+                <input type="radio" name="Materia" id="id_historia" value="Historia">
+                <label for="id_historia">Historia</label>
+                <input type="radio" name="Materia" id="id_geografia" value="Geografia">
+                <label for="id_geografia">Geografia</label>
+                <input type="radio" name="Materia" id="id_lengua" value="Lengua">
+                <label for="id_lengua">Lengua</label>
+                <br><br>
+                <label for="id_nombre">Nombre</label>
+                <input type="text" name="Nombre" id="id_nombre">
+                <br>
+                <label for="id_apellidos">Apellidos</label>
+                <input type="text" name="Apellidos" id="id_apellidos">
+                <br>
+                <label for="id_direccion">Direccion</label>
+                <input type="text" name="Direccion" id="id_direccion">
+                <br><br>
+                <label for="id_color">Elija un color</label>
+                <input type="color">
+                <br>
+                <textarea name="texto_escrito" placeholder="Utilice este cuadro para escribir" rows="5" cols="50"></textarea>
+                <br>
+                <label for="id_fecha2">Elija una fecha</label>
+                <input type="date" id="id_fecha2">
+                <br>
+                <select name="idioma">
+                    <option value="ingles">Inglés</option>
+                </select>
+                <br>
+                <label for="id_hora">Elija una hora</label>
+                <input type="time" id="id_hora">
+                <br>
+                <label for="id_fichero2">Elija un fichero:</label>
+                <input type="file" name="fichero2" id="id_fichero2">
+                <br>
+                <input type="checkbox" id="id_mujer" name="mujer">
+                <label for="id_mujer">Mujer</label>
+                <input type="checkbox" id="id_hombre" name="hombre">
+                <label for="id_hombre">Hombre</label>
+            </fieldset>
+        </form>
     </body>
 </html>

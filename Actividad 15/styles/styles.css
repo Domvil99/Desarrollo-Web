@@ -1,0 +1,51 @@
+/* 1. Párrafos hermanos adyacentes */
+p + p {
+    color: green;
+}
+
+p.text-indent {
+    text-indent: 30px;
+}
+
+p.text-align {
+    text-align: right;
+}
+
+p.text-decoration {
+    text-decoration: underline;
+}
+
+p.letter-spacing {
+    letter-spacing: 3px;
+}
+
+p.word-spacing {
+    word-spacing: 10px;
+}
+
+p.text-transform {
+    text-transform: uppercase;
+}
+
+p.line-height {
+    line-height: 70px;
+}
+
+/* 9. Estilos para las celdas de la tabla */
+td {
+    height: 100px;
+    border: 1px solid grey;
+}
+
+    /* 10. Alineación vertical según clase */
+    td.a {
+        vertical-align: top;
+    }
+
+    td.b {
+        vertical-align: middle;
+    }
+
+    td.c {
+        vertical-align: bottom;
+    }

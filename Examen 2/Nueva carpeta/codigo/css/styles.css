@@ -1,0 +1,182 @@
+/* ====== RESET ====== */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Inter", sans-serif;
+}
+
+body {
+  background: #0b1b3a;
+  color: #ffffff;
+  width: 100%;
+  min-height: 100vh;
+  position: relative;
+  overflow: hidden;
+}
+
+/* ====== CONTENEDOR PRINCIPAL ====== */
+section {
+  width: 100%;
+  max-width: 900px;
+  margin: 0 auto;
+  padding-top: 120px; /* espacio para el span superior */
+  padding-left: 48px; /* alineación general según Figma */
+  padding-right: 48px;
+  position: relative;
+}
+
+/* ============================================================
+   SPAN: "Inscripciones abiertas 2026" (MEDIDAS EXACTAS FIGMA)
+   ============================================================ */
+section > span:first-of-type {
+  position: absolute;
+  top: 26.5px;
+  left: 48px;
+
+  width: 255px;
+  height: 30px;
+
+  display: flex;
+  align-items: center;
+
+  background: rgba(60, 131, 246, 0.10); /* #3C83F61A */
+  border: 1px solid rgba(60, 131, 246, 0.20); /* #3C83F633 */
+  border-radius: 9999px;
+
+  font-size: 14px;
+  font-weight: 600;
+  color: #ffffff;
+
+  padding-left: 35px; /* posición exacta del texto */
+  z-index: 10;
+}
+
+/* ICONO DENTRO DEL SPAN */
+section > span:first-of-type::before {
+  content: "";
+  position: absolute;
+  width: 11px;
+  height: 11px;
+
+  top: 9px;
+  left: 14px;
+
+  background: #3C83F6;
+  border-radius: 50%;
+}
+
+/* ====== TITULAR PRINCIPAL ====== */
+h1 {
+  font-size: 64px;
+  font-weight: 800;
+  line-height: 1.1;
+  max-width: 600px;
+  margin-bottom: 20px;
+}
+
+/* ====== PÁRRAFO PRINCIPAL ====== */
+p {
+  font-size: 20px;
+  line-height: 1.6;
+  opacity: 0.85;
+  max-width: 600px;
+  margin-bottom: 40px;
+}
+
+/* ====== FORMULARIO ====== */
+form {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  margin-bottom: 25px;
+}
+
+input[type="email"] {
+  width: 320px;
+  height: 48px;
+  padding: 0 16px;
+  border-radius: 10px;
+  border: none;
+  outline: none;
+  font-size: 16px;
+}
+
+button {
+  height: 48px;
+  padding: 0 24px;
+  background: #4f7df0;
+  border: none;
+  border-radius: 10px;
+  color: #fff;
+  font-size: 16px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: 0.2s ease;
+}
+
+button:hover {
+  background: #6a92ff;
+}
+
+/* ====== TEXTO INFERIOR ====== */
+section > span:last-of-type {
+  display: block;
+  font-size: 16px;
+  opacity: 0.7;
+  margin-top: 10px;
+}
+
+/* ====== DECORACIONES DE FONDO (como en la imagen) ====== */
+body::before,
+body::after {
+  content: "";
+  position: absolute;
+  border-radius: 50%;
+  background: rgba(255,255,255,0.05);
+  filter: blur(40px);
+}
+
+body::before {
+  width: 300px;
+  height: 300px;
+  top: -80px;
+  left: -80px;
+}
+
+body::after {
+  width: 400px;
+  height: 400px;
+  bottom: -120px;
+  right: -120px;
+}
+
+/* ====== RESPONSIVE ====== */
+@media (max-width: 768px) {
+  section {
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+
+  h1 {
+    font-size: 42px;
+  }
+
+  p {
+    font-size: 18px;
+  }
+
+  form {
+    flex-direction: column;
+    align-items: stretch;
+  }
+
+  input[type="email"],
+  button {
+    width: 100%;
+  }
+
+  section > span:first-of-type {
+    left: 20px;
+  }
+}

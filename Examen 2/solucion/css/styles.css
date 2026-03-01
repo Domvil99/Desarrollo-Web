@@ -1,0 +1,165 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Space Grotesk', sans-serif;
+  background:  #0F172A;
+  color: white;
+}
+
+.hero {
+  width: 100%;
+  min-height: 100vh;
+  padding: 30px 50px;
+  display: flex;
+  align-items: center;
+}
+
+.container {
+  width: 100%;
+  max-width: 1300px;
+  margin: auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.content {
+  max-width: 670px;
+}
+
+/* Badge */
+
+.badge {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  padding: 7px 20px;
+  border-radius: 9999px;
+  background-color: #1E293B;
+  border: 1px solid #3C83F6;
+  margin-bottom: 10px;
+}
+.badge span {
+  font-size: 12px;
+  font-weight: 700;
+  letter-spacing: 1.2px;
+  text-transform: uppercase;
+  color: #3C83F6;
+}
+
+.badge-icon {
+  width: 11px;
+  height: 11px;
+}
+
+/* H1 */
+
+h1 {
+  font-size: 72px;
+  line-height: 72px;
+  letter-spacing: -1.8px;
+  font-weight: 700;
+  margin-bottom: 20px;
+}
+
+.highlight {
+  color: #3C83F6;
+}
+
+/* Párrafo */
+
+p {
+  font-size: 20px;
+  line-height: 28px;
+  color: #94A3B8;
+  margin-bottom: 40px;
+  max-width: 520px;
+}
+
+/* Form */
+
+.input-wrapper {
+  width: 100%;
+  max-width: 520px;
+  height: 70px;
+  display: flex;
+  align-items: center;
+  background-color: #1E293B;
+  border: 1px solid #334155;
+  border-radius: 12px;
+  padding: 0 10px 0 25px;
+  gap: 15px;
+}
+
+.mail-icon {
+  width: 19px;
+  height: 15px;
+}
+
+input {
+  flex: 1;
+  background: transparent;
+  border: none;
+  outline: none;
+  font-size: 16px;
+  color: #64748B;
+}
+
+button {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  background: #3C83F6;
+  border: none;
+  color: white;
+  font-weight: 700;
+  font-size: 16px;
+  padding: 14px 32px;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: 0.3s ease;
+}
+
+button:hover {
+  background: #2563EB;
+}
+
+.arrow-icon {
+  width: 13px;
+  height: 13px;
+}
+
+/* Bottom info */
+
+.bottom-info {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  margin-top: 18px;
+  color: #64748B;
+  font-size: 12px;
+}
+
+.small-icon {
+  width: 9px;
+  height: 11px;
+}
+
+/* Illustration */
+
+.illustration {
+  width: 445px;
+  height: 445px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.illustration img {
+  width: 100%;
+  height: auto;
+}
